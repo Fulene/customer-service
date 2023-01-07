@@ -6,10 +6,3 @@ spring:
     name: customer-service
   config:
     import: optional:configserver:http://localhost:8888
-
-# For Actuator
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
