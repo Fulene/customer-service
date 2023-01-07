@@ -21,8 +21,8 @@ public class CustomerController {
     private String p2;
 
     @GetMapping("/params")
-    // ...
     public Map<String, String> checkParams() {
+        // ...
         return Map.of("x", x, "y", y, "p1", p1, "p2", p2);
     }
 
