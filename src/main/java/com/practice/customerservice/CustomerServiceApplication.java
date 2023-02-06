@@ -4,10 +4,9 @@ import com.practice.customerservice.services.CustomerService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient  // Just needed for Eureka
 public class CustomerServiceApplication implements CommandLineRunner {
     private final CustomerService customerService;
 

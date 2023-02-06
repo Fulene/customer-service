@@ -28,4 +28,11 @@ public class CustomerService {
         return customerRepository.findAll();
     }
 
+    public void create(Customer customer) {
+        // some ctrls...
+
+        // if all is good, let's save it
+        customerRepository.save(customer);
+    }
+
 }

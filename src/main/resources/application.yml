@@ -5,4 +5,8 @@ spring:
   application:
     name: customer-service
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://config-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
